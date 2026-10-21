@@ -171,6 +171,13 @@ class Project:
     def save_state(self, st: State):
         _write_atomic(self.dir / "state.json", st.model_dump_json(indent=2))
 
+    def load_active_state(self) -> State | None:
+        """The generation state that belongs to the current storyboard: none unless the storyboard is approved.
+        Writes go dependents-first, so a crash part-way through confirming or regenerating can leave a state.json
+        next to an unapproved storyboard; that state must be ignored, exactly as the pipeline ignores it."""
+        sb = self.load_storyboard()
+        return self.load_state() if sb is not None and sb.approved else None
+
     def clear_state(self):
         """Forget all generation progress. Shot and final files stay on disk but are no longer referenced."""
         (self.dir / "state.json").unlink(missing_ok=True)

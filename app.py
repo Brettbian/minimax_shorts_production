@@ -146,11 +146,11 @@ def board(proj: Project):
                              key=f"{key}:variants", disabled=sb.approved)
     music = st.text_input("统一的背景音乐风格", sb.music_style, key=f"{key}:music", disabled=sb.approved)
 
-    state = proj.load_state()
+    state = proj.load_active_state()
     if state is not None:
         if st.session_state.pop(f"autorun:{proj.id}", False):
             run_pipeline(proj, "H3 正在同时生成三个镜头，M3 逐个质检…")
-            state = proj.load_state()
+            state = proj.load_active_state()
         elif not state.all_done and st.button("▶️ 生成 / 继续未完成的镜头", type="primary",
                                               help="已完成的镜头会跳过；生成中的镜头会继续查询原任务，不会重复提交"):
             run_pipeline(proj, "继续生成…")
@@ -278,7 +278,7 @@ def main():
     st.caption(f"项目 {proj.id}")
     product_section(proj)
     board(proj)
-    final_section(proj, proj.load_state())
+    final_section(proj, proj.load_active_state())
 
 
 main()

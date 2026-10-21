@@ -85,13 +85,13 @@ def main():
         pipeline.approve(proj, args.resolution)
         if pipeline.run(proj).all_done:
             assemble.assemble(proj)
-        print(format_state(proj.load_state()))
+        print(format_state(proj.load_active_state()))
     else:
         proj = Project(args.id)
         if args.cmd == "storyboard":
             print(format_storyboard(storyboard.generate(proj)))
         elif args.cmd == "show":
-            sb, st = proj.load_storyboard(), proj.load_state()
+            sb, st = proj.load_storyboard(), proj.load_active_state()
             print(format_storyboard(sb) if sb else "(no storyboard)", end="\n\n")
             print(format_state(st) if st else "(not approved yet)")
         elif args.cmd == "approve":
