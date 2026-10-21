@@ -1,0 +1,20 @@
+{
+  "name": "发光LED小白鞋",
+  "category": "鞋类",
+  "selling_points": [
+    "鞋底内置LED灯带，夜晚自带光效",
+    "透气网面鞋身，久穿不闷脚",
+    "百搭纯白配色，日常穿搭不出错",
+    "USB充电，一次充满可亮6小时"
+  ],
+  "images": [
+    "1.jpg",
+    "2.jpg"
+  ],
+  "test_focus": "2张同款不同角度的白底图；考验鞋型和发光鞋底的还原",
+  "license": "CC0 (rawpixel public domain)",
+  "sources": [
+    "https://www.rawpixel.com/image/11524416",
+    "https://www.rawpixel.com/image/11524257"
+  ]
+}

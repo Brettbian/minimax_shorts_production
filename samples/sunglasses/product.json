@@ -1,0 +1,18 @@
+{
+  "name": "经典飞行员墨镜",
+  "category": "配饰",
+  "selling_points": [
+    "经典飞行员镜框，戴上就有型",
+    "金色金属细框，轻盈不压鼻",
+    "防紫外线镜片，户外出行护眼",
+    "男女同款，脸型适配度高"
+  ],
+  "images": [
+    "1.jpg"
+  ],
+  "test_focus": "1张图，金属细框和镜片反光；考验细结构",
+  "license": "CC0 (rawpixel public domain)",
+  "sources": [
+    "https://www.rawpixel.com/image/6017957"
+  ]
+}

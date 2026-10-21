@@ -1,0 +1,18 @@
+{
+  "name": "黑色大理石纹极简腕表",
+  "category": "配饰",
+  "selling_points": [
+    "天然黑色大理石纹表盘，每块纹路都不同",
+    "真皮表带，贴合手腕",
+    "超薄表身，正装休闲都好搭",
+    "简约无刻度设计，越看越耐看"
+  ],
+  "images": [
+    "1.jpg"
+  ],
+  "test_focus": "1张图，表盘大理石纹理和细指针；考验精细纹理的还原",
+  "license": "CC0 (rawpixel public domain)",
+  "sources": [
+    "https://www.rawpixel.com/image/11524166"
+  ]
+}

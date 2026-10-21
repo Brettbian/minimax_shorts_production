@@ -1,0 +1,22 @@
+{
+  "name": "红色高帮LED发光鞋",
+  "category": "鞋类",
+  "selling_points": [
+    "鞋底LED灯多色可切换，一双鞋多种氛围",
+    "高帮加魔术贴设计，穿脱方便又护脚踝",
+    "亮红色皮质鞋面，回头率拉满",
+    "USB充电，派对、夜跑都能亮起来"
+  ],
+  "images": [
+    "1.jpg",
+    "2.jpg",
+    "3.jpg"
+  ],
+  "test_focus": "3张同款不同角度的白底图（一双、单只、一双），每张灯色不同；考验多角度的一致性和灯色变化",
+  "license": "CC0 (rawpixel public domain)",
+  "sources": [
+    "https://www.rawpixel.com/image/11515754",
+    "https://www.rawpixel.com/image/11524261",
+    "https://www.rawpixel.com/image/11524161"
+  ]
+}

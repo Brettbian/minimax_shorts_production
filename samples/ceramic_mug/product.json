@@ -1,0 +1,18 @@
+{
+  "name": "手工粗陶马克杯",
+  "category": "家居",
+  "selling_points": [
+    "手工拉坯，每只纹理都独一无二",
+    "哑光釉面，触感温润",
+    "350ml容量，咖啡、茶都合适",
+    "可用于微波炉和洗碗机"
+  ],
+  "images": [
+    "1.jpg"
+  ],
+  "test_focus": "只有1张图的简单商品；作为基准用例",
+  "license": "CC0 (rawpixel public domain)",
+  "sources": [
+    "https://www.rawpixel.com/image/3283727"
+  ]
+}
